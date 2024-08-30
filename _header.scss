@@ -1,10 +1,12 @@
 .top {
     position: relative;
+    background-color: #E1FF8F;
     background-image: url(img/background-top.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 800px;
+    height: 800px;    
+
 
     &::before {
         content: "";
@@ -64,7 +66,7 @@
         bottom: 5123px; 
         background-image: url(img/big-star.svg);
         background-size: cover;
-        z-index: 1;
+        
     }
 }
 

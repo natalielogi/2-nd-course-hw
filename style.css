@@ -6,6 +6,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow: hidden;
+  height: 100%;
 }
 
 .center {
@@ -15,6 +16,7 @@ body {
 
 .top {
   position: relative;
+  background-color: #E1FF8F;
   background-image: url(img/background-top.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,7 +75,6 @@ body {
   bottom: 5123px;
   background-image: url(img/big-star.svg);
   background-size: cover;
-  z-index: 1;
 }
 
 .header {
