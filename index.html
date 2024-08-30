@@ -14,7 +14,7 @@
         <header class="header" >
             <h1 class="header__title" >Добро пожаловать <br>на мой сайт мини-игр</h1>
             <p class="header__text" >Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай <span class="header__text-bold">«Поехали!»</span>  и <span class="header__text-bold">приступай</span>.</p>
-            <button class="header__button" onclick="location.href='#target-element'">Поехали!</button>
+            <button class="header__button" onclick="location.href='#info'">Поехали!</button>
             <div class="star">
                 <div class="star-3"></div>
                 <div class="star-4"></div>
@@ -22,20 +22,56 @@
             </div>
         </header>
     </div>
-<div class="info center">
+<div class="info center" id="info">
     <div class="info-box">
         <div class="info-top">
-            <h2>Об играх</h2>
-            <p>В моей коллекции представлено 6 игр на разные темы. Игры несложные — в них может поиграть каждый.
-                Все игры доступны для пользования.</p>
+            <h2 class="info__title" >Об играх</h2>
+            <p class="info__text" >В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них может поиграть каждый.
+                <br>Все игры доступны для пользования.</p>
         </div>
         <div class="card">
-                <div class="card-number"></div>
-                <div class="card-maths"></div>
-                <div class="card-text"></div>
-                <div class="card-rock"></div>
-                <div class="card-quiz"></div>
-                <div class="card-color"></div>
+                <div class="card-number">
+                    <img class="card__img" src="img/number.svg" alt="number">
+                    <div class="card__info">
+                        <p class="card__order card__order-1">Игра № 1</p>
+                        <h2 class="card__title" >Угадай число</h2>
+                    </div>
+                </div>
+                <div class="card-maths">
+                    <img class="card__img" src="img/maths.svg" alt="maths">
+                    <div class="card__info">
+                        <p class="card__order-2">Игра № 2</p>
+                        <h2 class="card__title" >Простая арифметика</h2>
+                    </div>
+                </div>
+                <div class="card-text">
+                    <img class="card__img" src="img/text.svg" alt="text">
+                    <div class="card__info">
+                        <p class="card__order">Игра № 3</p>
+                        <h2 class="card__title" >Переверни текст</h2>
+                    </div>
+                </div>
+                <div class="card-rock">
+                    <img class="card__img" src="img/rock.svg" alt="rock">
+                    <div class="card__info">
+                        <p class="card__order">Игра № 4</p>
+                        <h2 class="card__title" >Камень, ножницы, бумага</h2>
+                    </div>
+                </div>
+                <div class="card-quiz">
+                    <img class="card__img" src="img/quiz.svg" alt="quiz">
+                    <div class="card__info">
+                        <p class="card__order">Игра № 5</p>
+                        <h2 class="card__title" >Простая викторина</h2>
+                    </div>
+                </div>
+                <div class="card-color">
+                    <img class="card__img" src="img/color.svg" alt="color">
+                    <div class="card__info">
+                        <p class="card__order">Игра № 6</p>
+                        <h2 class="card__title" >Генератор случайных цветов</h2>
+                    </div>
+                </div>
         </div>
     </div>
 </div>
