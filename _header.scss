@@ -1,0 +1,115 @@
+.top {
+    position: relative;
+    background-image: url(img/background-top.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+
+    &::before {
+        content: "";
+        position: fixed;
+        left: 63px;
+        top: 94px;
+        width: 57px;
+        height: 57px;
+        background-image: url(img/Star-1.svg);
+        background-size: cover;
+        z-index: 1;
+    }
+
+    &::after {
+        content: "";
+        position: fixed;
+        width: 35px;
+        height: 35px;
+        left: 156px;
+        top: 69px;
+        background-image: url(img/Star-2.svg);
+        background-size: cover;
+        z-index: 1;
+    }
+}
+
+.star {
+    
+    &-3 {
+        position: fixed;
+        width: 37px;
+        height: 37px;
+        left: 948px;
+        top: 538px;
+        background-image: url(img/Star-3.svg);
+        background-size: cover;
+        z-index: 1;
+    }
+
+    &-4 {
+        position: fixed;
+        width: 83px;
+        height: 83px;
+        left: 1013px;
+        top: 568px;
+        background-image: url(img/Star-4.svg);
+        background-size: cover;
+        z-index: 1;
+    }
+
+    &-big {
+        position: fixed;
+        width: 1074px;
+        height: 1130.46px;
+        right: -488px;
+        top: -333.46px;
+        bottom: 5123px; 
+        background-image: url(img/big-star.svg);
+        background-size: cover;
+        z-index: 1;
+    }
+}
+
+.header {
+    padding-top: 196px;
+    
+
+    &__title {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        padding-bottom: 24px;
+        text-align: left;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        padding-bottom: 48px;
+    }
+
+    &__text-bold {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        box-sizing: border-box;
+        border: 1px solid rgb(32, 32, 39);
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 550;
+        line-height: 141.69%;
+        text-align: center;
+        color: white;
+        cursor: pointer;
+    }
+
+    &__button:hover {
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
+}
