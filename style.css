@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   height: 100%;
@@ -90,64 +94,71 @@ body {
   font-weight: 400;
   line-height: 32px;
 }
-.info .card-number, .info .card-maths, .info .card-text, .info .card-rock, .info .card-quiz, .info .card-color {
+
+.card {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-top: 72px;
+}
+.card__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.card-number, .card-rock, .card-maths, .card-quiz, .card-text, .card-color {
   border-radius: 30px;
   box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
   background: rgb(255, 255, 255);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  cursor: pointer;
 }
-.info .card-number {
+.card-number {
   width: 378px;
   height: 473px;
 }
-.info .card-maths, .info .card-quiz {
-  width: 378px;
-  height: 512px;
-}
-.info .card-text {
-  width: 378px;
-  height: 314px;
-}
-.info .card-rock, .info .card-color {
+.card-rock, .card-color {
   width: 378px;
   height: 551px;
 }
-.info .card__info {
-  padding: 32px 32px 36px 32px;
+.card-maths, .card-quiz {
+  width: 378px;
+  height: 512px;
+}
+.card-text {
+  width: 378px;
+}
+.card__info {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 32px 32px 36px 32px;
 }
-.info .card__order {
+.card__number {
   border-radius: 52.58px;
   background: rgb(247, 247, 247);
+  padding: 8px 16px 10px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
   width: 76px;
   height: 18px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 110%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px 10px 16px;
 }
-.info .card__order-2 {
-  border-radius: 52.58px;
-  background: rgb(247, 247, 247);
-  width: 79px;
-  height: 18px;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 110%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 16px 10px 16px;
-}
-.info .card__title {
-  color: rgb(32, 32, 39);
+.card__name {
   font-size: 32px;
   font-weight: 700;
   line-height: 39px;
+}
+.card-number:hover, .card-rock:hover, .card-maths:hover, .card-quiz:hover, .card-text:hover, .card-color:hover {
+  transform: scale(1.05);
+  z-index: 2;
+  box-shadow: 0px 16.61px 52.25px -7.57px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */
