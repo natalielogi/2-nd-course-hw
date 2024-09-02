@@ -1,0 +1,123 @@
+.info {
+    background-color: rgb(32, 32, 39);
+    height: 100%;
+    background-image: url(img/stars-games.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: calc(100% + 150px) calc(0% + 200px);
+
+
+    &-top {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding-top: 194px;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+    }
+
+    &__text {
+        width: 788px;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+
+}       
+
+.card {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 72px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &-number, 
+    &-rock,
+    &-maths,
+    &-quiz,
+    &-text, 
+    &-color {
+        border-radius: 30px;
+        box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    &-number {
+        width: 378px;
+        height: 473px;
+    }
+
+    &-rock,
+    &-color {
+        width: 378px;
+        height: 551px;
+    }
+
+    &-maths,
+    &-quiz {
+        width: 378px;
+        height: 512px;
+    }
+
+    &-text {
+        width: 378px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 32px 36px 32px;
+    }
+
+    &__number {
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        padding: 8px 16px 10px 16px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 110%;
+        width: 76px;
+        height: 18px;
+    }
+
+    &__name {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+    }
+
+    &-number:hover,
+    &-rock:hover,
+    &-maths:hover,
+    &-quiz:hover,
+    &-text:hover,
+    &-color:hover {
+        transform: scale(1.05);
+        z-index: 2;
+        box-shadow: 0px 16.61px 52.25px -7.57px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.card a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+

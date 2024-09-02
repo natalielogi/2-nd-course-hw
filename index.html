@@ -1,21 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт с мини-играми</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="top">
-        <div class="header">
-            <h1>Добро пожаловать на мой сайт мини-игр</h1>
-            <p>Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай.</p>
-            <button onclick="location.href='#target-element'">Поехали!</button>
+    <div class="top center">
+        <header class="header">
+            <h1 class="header__title">Добро пожаловать <br>на мой сайт мини-игр</h1>
+            <p class="header__text">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай <span
+                    class="header__text-bold">«Поехали!»</span> и <span class="header__text-bold">приступай</span>.</p>
+            <button class="header__button" onclick="location.href='#info'">Поехали!</button>
+            <div class="star">
+                <div class="star-3"></div>
+                <div class="star-4"></div>
+                <div class="star-big"></div>
+            </div>
+        </header>
+    </div>
+    <div class="info center" id="info">
+        <div class="info-box">
+            <div class="info-top">
+                <h2 class="info__title">Об играх</h2>
+                <p class="info__text">В моей коллекции представлено 6 игр на разные темы. <br>Игры несложные — в них
+                    может поиграть каждый.
+                    <br>Все игры доступны для пользования.
+                </p>
+            </div>
+            <div class="card">
+                <div class="card__container">
+                    <a href="#" class="card-number">
+                        <img src="img/number.svg" alt="number">
+                        <div class="card__info">
+                            <p class="card__number">Игра №1</p>
+                            <h2 class="card__name">Угадай число</h2>
+                        </div>
+                    </a>
+                    <a href="#" class="card-rock">
+                        <img src="img/rock.svg" alt="rock">
+                        <div class="card__info">
+                            <p class="card__number">Игра №4</p>
+                            <h2 class="card__name">Камень, ножницы, <br>бумага</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="card__container">
+                    <a href="#" class="card-maths">
+                        <img src="img/maths.svg" alt="maths">
+                        <div class="card__info">
+                            <p class="card__number">Игра №2</p>
+                            <h2 class="card__name">Простая арифметика</h2>
+                        </div>
+                    </a>
+                    <a href="#" class="card-quiz">
+                        <img src="img/quiz.svg" alt="quiz">
+                        <div class="card__info">
+                            <p class="card__number">Игра №5</p>
+                            <h2 class="card__name">Простая викторина</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="card__container">
+                    <a href="#" class="card-text">
+                        <img src="img/text.svg" alt="text">
+                        <div class="card__info">
+                            <p class="card__number">Игра №3</p>
+                            <h2 class="card__name">Переверни текст</h2>
+                        </div>
+                    </a>
+                    <a href="#" class="card-color">
+                        <img src="img/color.svg" alt="color">
+                        <div class="card__info">
+                            <p class="card__number">Игра №6</p>
+                            <h2 class="card__name">Генератор случайных цветов</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </div>
+
 </body>
+
 </html>
