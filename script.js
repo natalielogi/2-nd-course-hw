@@ -1,8 +1,9 @@
-let a = 20;
-alert(a); 
+let a = 10;
+let b = 2;
+alert(a + b);
 
-const iPhone = 2007;
-alert(iPhone);
+alert(a - b);
 
-const jS = 'Брендан Айк';
-alert(jS);
+alert (a * b);
+
+alert(a / b);
