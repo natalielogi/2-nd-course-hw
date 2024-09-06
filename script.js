@@ -85,10 +85,15 @@ switch (clientsOS) {
         console.log('Некорректное значение для clientOS');
 }
 
-let clientDeviceYear = 2015; 
+let clientDeviceYear = prompt('Введите год производства телефона:');
+clientDeviceYear = Number(clientDeviceYear);
+
 let message;
 
-if (clientDeviceYear < 2015) {
+if (isNaN(clientDeviceYear)) {
+    message = 'Некорректный год производства';
+}
+else if (clientDeviceYear < 2015) {
     switch (clientsOS) {
         case 0:
         message = 'Установите облегченную версию приложения для iOS по ссылке';
@@ -112,4 +117,4 @@ if (clientDeviceYear < 2015) {
     }
 }
 
-console.log(message);
+alert(message);
