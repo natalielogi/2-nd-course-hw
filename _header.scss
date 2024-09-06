@@ -1,10 +1,10 @@
 .top {
     position: relative;
     background-color: #E1FF8F;
-    background-image: url(img/stars-right.svg), url(img/stars-left.svg);
-    background-size: 75%, 10%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: calc(100% + 550px) calc(0% - 400px), calc(100% - 1370px) calc(0% + 50px);
+    background-image: url(img/top-stars.svg);
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: calc(100% + 585px) calc(0% - 440px);
     height: 800px;    
 }
 
