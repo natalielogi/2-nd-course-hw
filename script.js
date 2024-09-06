@@ -26,7 +26,7 @@ let b = 3;
 
 alert(Number(a) + Number(b));
 
-let monthsNumber = 10; 
+let monthsNumber = 13; 
 if (monthsNumber < 1 || monthsNumber > 12) {
     console.log('Некорректный номер месяца');
 } else {
@@ -54,5 +54,20 @@ if (monthsNumber < 1 || monthsNumber > 12) {
     
         default:
             console.log('Неккоректный номер месяца');
+    }
+}
+
+//Дополнительные задания // 
+
+let input = prompt('Пожалуйста, введите любое число');
+let number = Number(input);
+
+if (isNaN(number)) {
+    alert('Введено не число');
+} else {
+    if (number % 2 === 0) {
+        alert('Число четное');
+    } else {
+        alert('Число нечетное');
     }
 }
