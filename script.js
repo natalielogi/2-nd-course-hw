@@ -72,7 +72,7 @@ if (isNaN(number)) {
     }
 }
 
-let clientsOS = 1;
+let clientsOS = 0;
 
 switch (clientsOS) {
     case 0:
@@ -84,3 +84,32 @@ switch (clientsOS) {
     default:
         console.log('Некорректное значение для clientOS');
 }
+
+let clientDeviceYear = 2015; 
+let message;
+
+if (clientDeviceYear < 2015) {
+    switch (clientsOS) {
+        case 0:
+        message = 'Установите облегченную версию приложения для iOS по ссылке';
+            break;
+            case 1:
+            message = 'Установите облегченную версию приложения для Android по ссылке';
+                break;
+        default:
+            message = 'Некорректное значение для clientOS';
+    }
+} else {
+    switch (clientsOS) {
+        case 0:
+            message = 'Установите версию приложения для iOS по ссылке';
+            break;
+        case 1:
+            message = 'Установите версию приложения для Android по ссылке';
+            break;
+        default:
+            message = 'Некорректное значение для clientOS';
+    }
+}
+
+console.log(message);
