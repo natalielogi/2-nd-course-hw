@@ -34,10 +34,8 @@ body {
   position: relative;
   background-color: #E1FF8F;
   background-image: url(img/top-stars.svg);
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: calc(100% + 360px) calc(0% - 370px);
-  background-attachment: fixed;
+  background-position: calc(100% + 370px) calc(0% - 310px);
   height: 800px;
 }
 
@@ -86,8 +84,7 @@ body {
   height: 100%;
   background-image: url(img/stars-games.svg);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: calc(100% - 118px) calc(0% + 170px);
+  background-position: calc(100% + 25px) calc(0% + 170px);
 }
 .info-top {
   display: flex;
@@ -236,7 +233,7 @@ body {
   background-color: rgb(32, 32, 39);
   background-image: url(img/game-stars.svg);
   background-repeat: no-repeat;
-  background-position: calc(100% - 365px) calc(0% + 84px);
+  background-position: calc(100% - 170px) calc(0% + 100px);
   height: 100%;
   padding-bottom: 144px;
 }
