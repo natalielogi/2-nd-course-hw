@@ -71,3 +71,16 @@ if (isNaN(number)) {
         alert('Число нечетное');
     }
 }
+
+let clientsOS = 1;
+
+switch (clientsOS) {
+    case 0:
+        console.log('Установите версию приложения для iOS по ссылке');
+        break;
+        case 1:
+            console.log('Установите версию приложения для Android по ссылке');
+            break;
+    default:
+        console.log('Некорректное значение для clientOS');
+}
