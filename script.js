@@ -45,3 +45,16 @@ let firstFriday = 4;
 for (let day = firstFriday; day <= 31; day += 7) {
     console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
 }
+
+// Доп 1 //
+
+let k = 100; 
+let iterations = 0; 
+
+while (k >= 0) {
+    k = k - 7;
+    iterations++;
+}
+
+console.log(`Результат вычитания ${k}`);
+console.log(`Количество итераций ${iterations}`);
