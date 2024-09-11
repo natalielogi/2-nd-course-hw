@@ -97,3 +97,18 @@ console.log("Название: " + book["Название"]);
 console.log("Автор: " + book["Автор"]);
 console.log("Год издания: " + book["Год издания"]);
 console.log("Жанр: " + book["Жанр"]);
+
+// Доп 4 //
+
+let = numbers = [34, 78, 12, 56, 90, 23, 67, 89, 45, 11];
+let minNumber = numbers[0];
+
+for (let d = 1; d < numbers.length; d++) {
+   if (numbers[d] < minNumber) {
+     minNumber = numbers[d];
+   }
+    
+}
+
+console.log("Массив чисел:", numbers); 
+console.log("Минимальное число в массиве:", minNumber);
