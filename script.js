@@ -38,3 +38,10 @@ while (n >= 50) {
 
 console.log(`Число ${n}`);
 console.log(`Количество интераций ${num}`);
+
+// Задание 6 //
+
+let firstFriday = 4;
+for (let day = firstFriday; day <= 31; day += 7) {
+    console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
+}
