@@ -25,3 +25,16 @@ let obj = {
 for (let key in obj) {
     console.log(`${key} - зарплата ${obj[key]} долларов`);
 }
+
+// Задание 5 //
+
+let n = 1000; 
+let num = 0;
+
+while (n >= 50) {
+    n = n / 2; 
+    num++;
+}
+
+console.log(`Число ${n}`);
+console.log(`Количество интераций ${num}`);
