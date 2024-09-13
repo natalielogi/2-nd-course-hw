@@ -9,11 +9,11 @@
     }
 
     .top {
-        height: 100vh;   
+        height: 649px;   
         background-image: url(img/mobile-stars.svg);
         background-repeat: no-repeat;
         background-size: 115%;
-        background-position: calc(100% + 125px) calc(0% - 110px);
+        background-position: calc(100% + 125px) calc(0% - 95px);
 
     }
 
@@ -111,7 +111,7 @@
             border: 1px solid rgb(32, 32, 39);
             border-radius: 60px;
             background: rgb(32, 32, 39);
-            width: 335px;
+            width: 100%;
             padding: 16px 28px 16px 28px;
             font-size: 16px;
             font-weight: 600;
@@ -140,5 +140,32 @@
             line-height: 20px;  
             padding: 40px;
         }
+    }
+
+    .line {
+        box-sizing: border-box;
+        border: 0.54px solid rgba(255, 255, 255, 0.2);
+        padding: 16px 24px 16px 24px;
+        height: 51px;
+
+        &__box {
+            height: 19px;
+            display: flex;
+            gap: 27px;
+        }
+
+        &__item{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 110%;
+        }
+
+        &__item::after {
+            content: url(img/star-line_mobile.svg);
+            margin-left: 27px;
+            vertical-align: middle;
+        }
+    
+
     }
 }

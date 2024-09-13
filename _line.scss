@@ -1,0 +1,40 @@
+.line {
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);
+    background: rgb(188, 236, 48);
+    padding: 27px 49px 27px 49px;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+
+    &__box {
+        display: flex;
+        flex-direction: row;
+        gap: 51px;
+        align-items: center;
+        height: 36px;
+        width: 3122px;
+    }
+
+    &__item {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 1px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    &__item::after {
+        content: url(img/star-line.svg);
+        margin-left: 51px;
+        vertical-align: middle;
+    }
+
+
+
+
+
+
+}
