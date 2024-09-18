@@ -69,3 +69,21 @@ function addNumber(c, d) {
 console.log(addNumber(3, 5));  
 console.log(addNumber('3', '5'));
 console.log(addNumber('3', 'hello'));
+
+// Задание 6 //
+
+let userNumber = prompt('Введите цифру от 0 до 10');
+
+function multNumber() {
+
+    userNumber = Number(userNumber);
+
+    if (isNaN(userNumber) || userNumber > 10 || userNumber < 0) {
+        return'Переданный параметр не является числом или верным числом';
+    } else {
+        let cube = userNumber ** 3; 
+        return`${userNumber} в кубе ровняется ${cube}`;  
+    }
+}
+
+console.log(multNumber());
