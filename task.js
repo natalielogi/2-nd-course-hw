@@ -51,3 +51,21 @@ function userReply() {
 }
 
 userReply(); 
+
+// Задание 5 //
+
+function addNumber(c, d) {
+
+    с = Number(c);
+    d = Number(d);
+
+    if (isNaN(c) || isNaN(d) ) {
+        return('Одно или оба значения не являются числом');
+    } else {
+        return(c * d);
+    }
+}
+
+console.log(addNumber(3, 5));  
+console.log(addNumber('3', '5'));
+console.log(addNumber('3', 'hello'));
