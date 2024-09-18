@@ -13,10 +13,13 @@ let a = prompt('Введите число');
 
 function number () {
     if (a % 2 == 0) {
-        console.log('Число четное')
+        return('Число четное')
     } else {
-        console.log('Число нечетное')
+        return('Число нечетное')
     }
 }
 
-number();
+console.log(number());
+
+//Задание 3//
+
