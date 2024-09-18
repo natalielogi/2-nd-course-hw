@@ -87,3 +87,33 @@ function multNumber() {
 }
 
 console.log(multNumber());
+
+
+// Задание 7 (спасибо, я вспомнила почему я не любила геометрию в школе) // 
+
+const cicrle1 = {
+    radius: 5, 
+
+    getArea: function() {
+        return Math.PI * Math.pow(this.radius, 2);
+    },
+
+    getPerimeter: function() {
+        return 2 * Math.PI * this.radius;
+    }
+};
+
+const cicrle2 = {
+    radius: 10,
+
+    getArea: function() {
+        return Math.PI * Math.pow(this.radius, 2);
+    },
+
+    getPerimeter: function() {
+        return 2 * Math.PI * this.radius;
+    }
+};
+
+console.log(`Circle1 - Area: ${cicrle1.getArea()}, Perimeter: ${cicrle1.getPerimeter()}`);
+console.log(`Circle2 - Area: ${cicrle2.getArea()}, Perimeter: ${cicrle2.getPerimeter()}`);
