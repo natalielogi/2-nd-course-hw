@@ -35,3 +35,19 @@ function getSquare(number) {
 
 let result = getSquare(5);
 console.log(result); 
+
+// Задание 4 //
+
+let userAge = prompt('Сколько вам лет?');
+
+function userReply() {
+    if (userAge < 0) {
+        alert('Вы ввели некоректное число');
+    } else if (userAge >= 0 && userAge <= 12) {
+        alert('Привет, друг!');
+    } else if (userAge >= 13) { 
+        alert ('Добро пожаловать!')
+    }
+}
+
+userReply(); 
