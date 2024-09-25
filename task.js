@@ -55,3 +55,11 @@ if (numbs6.includes(Number(userGuess))) {
 } else {
     alert('Не угадал.')
 }
+
+// Задание 8 
+
+let str = 'abcdef';
+
+let reversedStr = str.split('').reverse().join('');
+
+console.log(reversedStr);
