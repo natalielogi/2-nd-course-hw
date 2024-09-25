@@ -80,3 +80,13 @@ for (let d = 0; d < numbs8.length - 1; d++) {
     let sum = numbs8[d] + numbs8[d + 1];
     console.log(`Сумма ${numbs8[d]} и ${numbs8[d + 1]} = ${sum}`);
 }
+
+// Задание 11
+
+function squareNumbers(numbs9) {
+    return numbs9.map(num => num ** 2); 
+}
+
+const input = [1, 2, 3, 4, 5];
+const squared = squareNumbers(input);
+console.log(squared); 
