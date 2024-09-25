@@ -71,3 +71,12 @@ const numbs7 = [[1, 2, 3], [4, 5, 6]];
 let flattenedNumbs = [...numbs7[0], ...numbs7[1]];
 
 console.log(flattenedNumbs);
+
+// Задание 10
+
+const numbs8 = [3, 7, 2, 5, 10, 1, 6, 4, 9, 8];
+
+for (let d = 0; d < numbs8.length - 1; d++) {
+    let sum = numbs8[d] + numbs8[d + 1];
+    console.log(`Сумма ${numbs8[d]} и ${numbs8[d + 1]} = ${sum}`);
+}
