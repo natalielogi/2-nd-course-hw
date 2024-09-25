@@ -100,3 +100,13 @@ function getStringLengths(strings) {
 const inputArray = ["apple", "banana", "cherry", "date"];
 const lengthsArray = getStringLengths(inputArray);
 console.log(lengthsArray); 
+
+// Задание 13
+
+function getNegativeNumbers(numbs10) {
+    return numbs10.filter(num => num < 0); 
+}
+
+const NegativeNumbs = [1, -2, 3, -4, 5, -6];
+const negative = getNegativeNumbers(NegativeNumbs);
+console.log(negative); // [-2, -4, -6]
