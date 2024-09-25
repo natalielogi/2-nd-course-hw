@@ -35,3 +35,11 @@ console.log(array);
 const numbs4 = [1, 1, 1];
 numbs4.push(2, 2, 2);
 console.log(numbs4); 
+
+// Задание 6
+
+const numbs5 = [9, 8, 7, 'a', 6, 5];
+const filteredNumbs = numbs5.filter(item => typeof item === 'number'); 
+filteredNumbs.sort((a, b) => a - b); 
+
+console.log(filteredNumbs); 
