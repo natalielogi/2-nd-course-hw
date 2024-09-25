@@ -10,3 +10,9 @@ for (let i = 0; i < numbs.length; i++) {
 
 const numbs2 = [1, 5, 4, 10, 0, 3];
 console.log(numbs2.indexOf(4));
+
+// Задание 3
+
+const numbs3 = [1, 3, 5, 10, 20];
+let space = numbs3.join(' ');
+console.log(space);
