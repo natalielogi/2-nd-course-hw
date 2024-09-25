@@ -109,4 +109,22 @@ function getNegativeNumbers(numbs10) {
 
 const NegativeNumbs = [1, -2, 3, -4, 5, -6];
 const negative = getNegativeNumbers(NegativeNumbs);
-console.log(negative); // [-2, -4, -6]
+console.log(negative); 
+
+// Задание 14
+
+function generateRandomArray(size, min, max) {
+    const randomArray = [];
+    for (let e = 0; e < size; e++) {
+        const randomValue = Math.floor(Math.random() * (max - min + 1)) + min;
+        randomArray.push(randomValue);
+    }
+    return randomArray;
+}
+
+const originalArray = generateRandomArray(10, 0, 10);
+
+const evenNumbers = originalArray.filter(num => num % 2 === 0);
+
+console.log("Исходный массив:", originalArray);
+console.log("Массив с четными значениями:", evenNumbers);
