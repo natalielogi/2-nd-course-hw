@@ -63,3 +63,11 @@ let str = 'abcdef';
 let reversedStr = str.split('').reverse().join('');
 
 console.log(reversedStr);
+
+// Задание 9
+
+const numbs7 = [[1, 2, 3], [4, 5, 6]];
+
+let flattenedNumbs = [...numbs7[0], ...numbs7[1]];
+
+console.log(flattenedNumbs);
