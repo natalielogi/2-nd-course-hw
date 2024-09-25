@@ -43,3 +43,15 @@ const filteredNumbs = numbs5.filter(item => typeof item === 'number');
 filteredNumbs.sort((a, b) => a - b); 
 
 console.log(filteredNumbs); 
+
+// Задание 7 
+
+const numbs6 = [9, 8, 7, 6, 5];
+
+let userGuess = prompt('Угадай число!');
+
+if (numbs6.includes(Number(userGuess))) {
+    alert('Угадал!');
+} else {
+    alert('Не угадал.')
+}
