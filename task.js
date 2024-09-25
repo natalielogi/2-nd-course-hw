@@ -29,3 +29,9 @@ for (let a = 0; a < 3; a++) {
     array.push(innerArray);
 }
 console.log(array);
+
+// Задание 5
+
+const numbs4 = [1, 1, 1];
+numbs4.push(2, 2, 2);
+console.log(numbs4); 
