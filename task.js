@@ -90,3 +90,13 @@ function squareNumbers(numbs9) {
 const input = [1, 2, 3, 4, 5];
 const squared = squareNumbers(input);
 console.log(squared); 
+
+// Задание 12
+
+function getStringLengths(strings) {
+    return strings.map(str => str.length); 
+}
+
+const inputArray = ["apple", "banana", "cherry", "date"];
+const lengthsArray = getStringLengths(inputArray);
+console.log(lengthsArray); 
