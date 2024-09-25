@@ -128,3 +128,13 @@ const evenNumbers = originalArray.filter(num => num % 2 === 0);
 
 console.log("Исходный массив:", originalArray);
 console.log("Массив с четными значениями:", evenNumbers);
+
+// Задание 15
+
+const numbersArray = generateRandomArray(6, 1, 10);
+
+const sum = numbersArray.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+const average = sum / numbersArray.length;
+
+console.log("Массив чисел:", numbersArray);
+console.log("Среднее арифметическое:", average);
