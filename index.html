@@ -21,6 +21,16 @@
             <button class="header__button" onclick="location.href='#info'">Поехали!</button>
         </header>
     </div>
+<div class="line">
+    <div class="line__box">
+        <p class="line__item" >Викторина</p>
+        <p class="line__item" >угадай число</p>
+        <p class="line__item" >Переверни текст</p>
+        <p class="line__item" >Простая арифметика</p>
+        <p class="line__item" >Камень, ножницы, бумага</p>
+        <p class="line__item" >Генератор случайных цветов</p>
+    </div>
+</div>
     <div class="info center" id="info">
         <div class="info-box">
             <div class="info-top">
@@ -86,11 +96,11 @@
     <div class="game center">
         <h2 class="game__title">Мини-игры</h2>
         <div class="game-box">
-            <div class="game__item" id="number">
+            <div class="game__item game__item-reverse" id="number">
                 <div class="game__info">  
                     <h3 class="game__name" >Угадай число</h3>
                     <p class="game__text" >Попробуй угадать случайное <br>число от 1 до 100.</p>
-                    <a class="game__link" href="#">Играть!</a>
+                    <button class="game__link" onclick="guess()">Играть</button>
                 </div> 
                 <img src="img/game-number.svg" alt="number">
             </div>
@@ -99,13 +109,13 @@
                 <div class="game__info">  
                     <h3 class="game__name" >Простая арифметика</h3>
                     <p class="game__text" >Попробуй решить простые арифметические задачи.</p>
-                    <a class="game__link" href="#">Играть!</a>
+                   <button class="game__link" onclick="maths()">Играть</button>
                 </div> 
             </div>
-            <div class="game__item" id="text">
+            <div class="game__item game__item-reverse" id="text">
                 <div class="game__info">  
                     <h3 class="game__name" >Переверни текст</h3>
-                    <p class="game__text" >Попробуй ввести текст, который <br>будет перевернут.</p>
+                    <p class="game__text game__text-text" >Попробуй ввести текст, который <br>будет перевернут.</p>
                     <a class="game__link" href="#">Играть!</a>
                 </div> 
                 <img src="img/game-text.svg" alt="text">
@@ -114,23 +124,23 @@
                 <img src="img/game-quiz.svg" alt="quiz">
                 <div class="game__info">  
                     <h3 class="game__name" >Викторина</h3>
-                    <p class="game__text" >Отвечай на вопросы викторины <br>с вариантами ответов.</p>
+                    <p class="game__text game__text-quiz" >Отвечай на вопросы викторины <br>с вариантами ответов.</p>
                     <a class="game__link" href="#">Играть!</a>
                 </div> 
             </div>
-            <div class="game__item" id="rock">
+            <div class="game__item game__item-reverse" id="rock">
                 <div class="game__info">  
                     <h3 class="game__name" >Камень, <br>ножницы, <br>бумага</h3>
                     <p class="game__text" >Сыграй в популярную игру <br>против компьютера.</p>
                     <a class="game__link" href="#">Играть!</a>
                 </div> 
-                <img src="img/game-rock.svg" alt="rock">
+                <img src="img/game-rock.png" alt="rock">
             </div>
             <div class="game__item" id="color">
                 <img src="img/game-color.svg" alt="color">
                 <div class="game__info">  
                     <h3 class="game__name" >Генератор случайных <br>цветов</h3>
-                    <p class="game__text" >Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
+                    <p class="game__text game__text-quiz" >Игра, в которой при клике на кнопку фон страницы меняется на случайный.</p>
                     <a class="game__link" href="#">Играть!</a>
                 </div> 
             </div>
