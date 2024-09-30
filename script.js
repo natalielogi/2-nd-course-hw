@@ -73,3 +73,27 @@ function maths() {
         alert(`Неправильно. Правильный ответ ${correctAnswer}`);
     }
 }
+
+function text() {
+    let userInput = prompt("Введите текст");
+
+    if (!userInput) {
+        alert("Пожалуйста, введите текст.");
+        return;
+    }
+
+    if (/^\d+$/.test(userInput)) {
+        alert("Ошибка: пожалуйста, введите текст, а не цифры.");
+        return;
+    }
+
+    if (!/^[а-яё\s]+$/i.test(userInput)) {
+        alert("Ошибка: пожалуйста, используйте только кириллицу.");
+        return;
+    }
+
+
+    let reversed = userInput.split('').reverse().join('');
+
+    alert(`Перевернутый текст: ${reversed}`);
+}
