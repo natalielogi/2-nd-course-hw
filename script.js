@@ -156,3 +156,31 @@ if (correctAnswersCount === quizQuestions.length) {
     alert("0 правильных ответов, попробуйте еще раз :(");
 }
 }
+
+function rock () {
+    
+    const rockSissorsPaper = ["камень", "ножницы", "бумага"];
+
+    let userChoice = prompt("Выберите: камень, ножницы или бумага").toLowerCase();
+
+    if (!rockSissorsPaper.includes(userChoice)) {
+        alert("Пожалуйста, выберите корректное значение: камень, ножницы или бумага.");
+        return;
+    }
+
+    let computerChoice = rockSissorsPaper[Math.floor(Math.random() * rockSissorsPaper.length)];
+
+    let result = determineWinner(userChoice, computerChoice);
+
+    alert(`Ваш выбор: ${userChoice}\nВыбор компьютера: ${computerChoice}\n${result}`);
+}
+
+function determineWinner(user, computer) {
+    if (user === computer) return "Ничья!";
+    
+    return (user === "камень" && computer === "ножницы") ||
+           (user === "ножницы" && computer === "бумага") ||
+           (user === "бумага" && computer === "камень")
+        ? "Вы победили!" 
+        : "Вы проиграли!";
+}
