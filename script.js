@@ -73,3 +73,86 @@ function maths() {
         alert(`Неправильно. Правильный ответ ${correctAnswer}`);
     }
 }
+
+function text() {
+    let userInput = prompt("Введите текст");
+
+    if (!userInput) {
+        alert("Пожалуйста, введите текст.");
+        return;
+    }
+
+    if (/^\d+$/.test(userInput)) {
+        alert("Ошибка: пожалуйста, введите текст, а не цифры.");
+        return;
+    }
+
+    if (!/^[а-яё\s]+$/i.test(userInput)) {
+        alert("Ошибка: пожалуйста, используйте только кириллицу.");
+        return;
+    }
+
+
+    let reversed = userInput.split('').reverse().join('');
+
+    alert(`Перевернутый текст: ${reversed}`);
+}
+
+function quiz() {
+
+    const quizQuestions = [
+        {
+            question: "Столица Австралии?",
+            options: ["Сидней", "Мелбурн", "Канберра"],
+            correctAnswer: "Канберра"
+        },
+        {
+            question: "Столица Канады?",
+            options: ["Торонто", "Оттава", "Ванкувер"],
+            correctAnswer: "Оттава"
+        },
+        {
+            question: "Столица Вьетнама?",
+            options: ["Ханой", "Хошимин", "Да Нанг"],
+            correctAnswer: "Ханой"
+        }
+    ];
+
+    function shuffleArray(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
+    let correctAnswersCount = 0;
+
+    for (let i = 0; i < quizQuestions.length; i++) {
+        const currentQuestion = quizQuestions[i];
+
+        const shuffledOptions = shuffleArray([...currentQuestion.options]);
+
+        let questionText = `${currentQuestion.question}\n`;
+
+        for (let j = 0; j < shuffledOptions.length; j++) {
+            questionText += `${j + 1}. ${shuffledOptions[j]}\n`;
+        }
+
+    const userAnswer = prompt(questionText + "Введите номер ответа:");
+
+    if (userAnswer) {
+        const selectedOptionIndex = parseInt(userAnswer) - 1; 
+        if (selectedOptionIndex >= 0 && selectedOptionIndex < shuffledOptions.length) {
+            if (shuffledOptions[selectedOptionIndex] === currentQuestion.correctAnswer) {
+                correctAnswersCount++;
+            }
+        } else {
+            alert("Ошибка: выберите правильный вариант ответа.");
+        }
+    }
+    }
+if (correctAnswersCount === quizQuestions.length) {
+    alert("Вы ответили на все вопросы правильно!");
+} else if (correctAnswersCount > 0) {
+    alert(`Правильно ${correctAnswersCount} из ${quizQuestions.length} вопросов.`);
+} else {
+    alert("0 правильных ответов, попробуйте еще раз :(");
+}
+}
