@@ -100,20 +100,28 @@
             padding: 12px 20px;
             width: auto;
         }
-
     }
 
     img {
         max-width: 100%;
         height: auto;
     }
-}
 
-@media (min-width: 768px) and (max-width: 833px) {
-    
-    .center {
-        padding-left: 24px;
-        padding-right: 24px;
+    .line {
+        height: auto;
+        padding: 27px 49px 27px 49px;
+
+        &__box {
+            gap: 30px;
+            animation: scroll 15s linear infinite;
+        }
+
+        &__item {
+            font-size: 24px;
+        }
+
+        &__item::after {
+            margin-left: 30px;
+        }
     }
-
 }
