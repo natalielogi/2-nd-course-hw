@@ -274,6 +274,96 @@ body {
   vertical-align: middle;
 }
 
+@media (max-width: 1024px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .top {
+    height: auto;
+    min-height: 710px;
+    background-size: 130%;
+    background-position: calc(100% + 346px) calc(0% - 180px);
+  }
+  .info {
+    background-size: 107%;
+    background-position: calc(100% + 91px) calc(0% + 183px);
+  }
+  .info-top {
+    padding-top: 94px;
+  }
+  .info__title {
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+  }
+  .info__text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+  }
+  .card-number {
+    height: auto;
+    font-size: 14px;
+  }
+  .card__container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .card__info {
+    padding: 24px;
+  }
+  .card__name {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+  }
+  .card-number, .card-rock, .card-maths, .card-quiz, .card-text, .card-color {
+    width: 300px;
+    height: auto;
+  }
+  .game__title {
+    font-size: 48px;
+    line-height: 58px;
+    padding-bottom: 48px;
+  }
+  .game-box {
+    gap: 24px;
+  }
+  .game__info {
+    padding: 24px;
+  }
+  .game__name {
+    font-size: 32px;
+    line-height: 28px;
+  }
+  .game__text {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .game__link {
+    font-size: 20px;
+    padding: 12px 20px;
+    width: auto;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 833px) {
+  .center {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 @media (max-width: 767px) {
   br {
     display: none;
