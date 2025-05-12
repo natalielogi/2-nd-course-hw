@@ -184,3 +184,16 @@ function determineWinner(user, computer) {
         ? "Вы победили!" 
         : "Вы проиграли!";
 }
+
+function changeColor() {
+    
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    const gameElement = document.querySelector('.game');
+
+    gameElement.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+    alert(`Новый цвет: RGB(${r}, ${g}, ${b})`);
+}

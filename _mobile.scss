@@ -168,4 +168,18 @@
     
 
     }
+
+    .line {
+        &__box {
+            gap: 20px;
+            animation: scroll 10s linear infinite;
+        }
+
+        &__item {
+            font-size: 18px;
+        }
+
+        &__item::after
+        margin-left: 20px;
+    }
 }
